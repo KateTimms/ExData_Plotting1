@@ -22,5 +22,5 @@ with(powerconsumptionstwo, plot(Sub_metering_1 ~ dateTime, lty="solid", type = "
 par(points(powerconsumptionstwo$Sub_metering_2 ~ powerconsumptionstwo$dateTime, lty="solid", type = "l", col="red"))
 par(points(powerconsumptionstwo$Sub_metering_3 ~ powerconsumptionstwo$dateTime, lty="solid", type = "l", col="blue"))
 par(legend("topright", lty = c(1,1), col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")))
-with(powerconsumptionstwo, plot(Global_reactive_power ~ dateTime, lty="solid", type = "l", ylab = "Global Average Power", xlab = "datetime" ))
+with(powerconsumptionstwo, plot(Global_reactive_power ~ dateTime, lty="solid", type = "l", ylab = "Global_reactive_power", xlab = "datetime" ))
 dev.off()
